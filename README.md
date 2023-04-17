@@ -50,16 +50,16 @@ The following NPM scripts within `package.json` should be noted:
 - `format` - Runs the Prettier formatter on all `.ts` files, applying format updates where necessary.
 
 # Showcased Features
-|     Feature    |  Availability |
+|     Feature    |  Availability | Description |
 |-------------------------------|-----|
-|    [Omni Components](https://github.com/capitec/omni-components)            |  ✅ |
-|    [Omni Router](https://github.com/capitec/omni-router)                | ❌ |
-|    Component Intellisense     |  ✅  |
-|    VS Code Debugging          |  ✅  (Will open a second debug browser)|
-|    Tests                      |  ✅ |
-|    Serve                      |  ✅ |
-|    Build                      |  ✅ |
-|    Build chunking             |  ✅ |
-|    Preview built output       |  ✅ |
-|    Formatting                 |  ✅ |
-|    Linting                    |  ❌ |
+|    Components                 | ✅ | [Omni Components](https://github.com/capitec/omni-components) |
+|    Routing                    | ❌ | Implemented React router
+|    Component Intellisense     | ✅ | Provided for all Omni components |
+|    VS Code Debugging          | ✅ | Note this will open up a second browser instance |
+|    Tests                      | ✅ | Facilitated via Playwright  |
+|    Serve                      | ✅ |    |
+|    Build                      | ✅ |    |
+|    Build chunking             | ✅ |    |
+|    Preview built output       | ✅ |    |
+|    Formatting                 | ✅ |    |
+|    Linting                    | ❌ |    |
