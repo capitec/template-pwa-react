@@ -29,7 +29,7 @@
     "build": "react-scripts build",
     "preview": "npx http-server build -p 8083 -o --proxy http://0.0.0.0:8083?",
     "test": "npx playwright test",
-    "format": "prettier --config .prettierrc \"**/*.ts\" --write",
+    "format": "prettier --config .prettierrc \"**/*.tsx\" --write",
     "eject": "react-scripts eject"
   },
   "moduleDirectories": [
