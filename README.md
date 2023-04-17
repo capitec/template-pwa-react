@@ -1,6 +1,6 @@
 # Introduction
 
-Progressive Web App starter template for [React]()-based Single-page application (SPA) development, leveraging various [Omni]-components.
+Progressive Web App starter template for [React](https://react.dev/)-based Single-page application (SPA) development, leveraging various [Omni](https://github.com/capitec?q=omni-) libraries
 
 ### Headline Features
 - Typescript support.
@@ -11,6 +11,7 @@ Progressive Web App starter template for [React]()-based Single-page application
 ### Key Dependencies: 
 - Tooling
     - [VS Code](https://code.visualstudio.com) for application development.
+    - [Playwright](https://playwright.dev/) for end-to-end headless browser testing.
     - [ESLint](https://eslint.org/) for static code analysis.
     - [Prettier](https://prettier.io/) for opinionated code formatting.
     - [React Developer Tools](https://react.dev/learn/react-developer-tools) for debugging purposes supported for several popular browsers.
@@ -47,8 +48,6 @@ The following NPM scripts within `package.json` should be noted:
 - `preview` - Launches a simple web server, serving the `build` directory (Remember to `build` first! 🎗️).
 - `test` - Launches the Playwright test runner & executes all tests within `tests` directory.
 - `format` - Runs the Prettier formatter on all `.ts` files, applying format updates where necessary.
-- `lint`- Runs the ESLint analyzer on all `.ts` files, applying code updates where necessary.
-
 
 # Showcased Features
 |     Feature    |  Availability |
@@ -57,7 +56,7 @@ The following NPM scripts within `package.json` should be noted:
 |    [Omni Router](https://github.com/capitec/omni-router)                | ❌ |
 |    Component Intellisense     |  ✅  |
 |    VS Code Debugging          |  ✅  (Will open a second debug browser)|
-|    Tests                      |  ❌ |
+|    Tests                      |  ✅ |
 |    Serve                      |  ✅ |
 |    Build                      |  ✅ |
 |    Build chunking             |  ✅ |
