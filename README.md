@@ -51,15 +51,15 @@ The following NPM scripts within `package.json` should be noted:
 
 # Showcased Features
 |     Feature    |  Availability | Description |
-|-------------------------------|-----|
-|    Components                 | ✅ | [Omni Components](https://github.com/capitec/omni-components) |
-|    Routing                    | ❌ | Implemented React router
-|    Component Intellisense     | ✅ | Provided for all Omni components |
-|    VS Code Debugging          | ✅ | Note this will open up a second browser instance |
-|    Tests                      | ✅ | Facilitated via Playwright  |
-|    Serve                      | ✅ |    |
-|    Build                      | ✅ |    |
-|    Build chunking             | ✅ |    |
-|    Preview built output       | ✅ |    |
-|    Formatting                 | ✅ |    |
-|    Linting                    | ❌ |    |
+|-------------------------------|-----|-----------------------------------------------------------------|
+|    Components                 | ✅  | [Omni Components](https://github.com/capitec/omni-components)   |
+|    Routing                    | ❌  | Implemented React router                                        |
+|    Component Intellisense     | ✅  | Provided for all Omni components                                |
+|    VS Code Debugging          | ✅  | Note this will open up a second browser instance                |
+|    Tests                      | ✅  | Facilitated via Playwright                                      |
+|    Serve                      | ✅  |                                                                 |
+|    Build                      | ✅  |                                                                 |
+|    Build chunking             | ✅  |                                                                 |
+|    Preview built output       | ✅  |                                                                 |
+|    Formatting                 | ✅  |                                                                 |
+|    Linting                    | ❌  |                                                                 |
