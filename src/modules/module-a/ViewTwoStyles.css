@@ -1,0 +1,24 @@
+
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+.preview {
+    min-height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.preview > OmniIcon {
+    padding: 5px;
+    max-width: 58px;
+    flex-wrap: wrap;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+}
+.controls > * {
+    padding: 10px;
+    max-width: 170px;
+}

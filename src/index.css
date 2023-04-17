@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+
+  --omni-theme-font-size: 16px;
+  font-size: var(--omni-theme-font-size);
+  --omni-theme-font-weight: normal;
+  font-weight: var(--omni-theme-font-weight);
+  background: var(--global-background-color);
+}
+
+:root {
+
+--global-font-family: 'Hind Vadodara', sans-serif;
+--global-font-color: #000000;
+--global-background-color: #FFFFFF;
+--global-background-hover-color: #E6E6E6;
+
+font-family: var(--global-font-family);
+      
+--omni-theme-font-family: var(--global-font-family);
+  --omni-theme-primary-color:  #808080;
+  --omni-theme-primary-hover-color: #7878781a ; /* 3% darker */
+  --omni-theme-primary-active-color: #787878 ; /* 6% darker */
+
+  --omni-theme-accent-color: #c3c3c3;
+  --omni-theme-accent-hover-color:  #bbbbbb1a; /* 3% darker */
+  --omni-theme-accent-active-color:  #b4b4b4; /* 6% darker */
+
+  --omni-theme-background-color:  var(--global-background-color);
+  --omni-theme-background-hover-color:  #f7f7f71a; /* 3% darker */
+  --omni-theme-background-active-color:  #f0f0f0; /* 6% darker */
+
+  --omni-theme-font-color:  var(--global-font-color);
+  --omni-theme-disabled-border-color:  #dedede44;
+  --omni-theme-disabled-background-color:  #dedede;
+  --omni-theme-error-font-color:  red;
+  --omni-theme-error-border-color:  red;
+  --omni-theme-hint-font-color:  lightgrey;
+  --omni-theme-inactive-color:  #7c7c7c;
+  --omni-theme-box-shadow-color:  #f2f2f2;
+  --omni-theme-font-size: 14px;
+  --omni-theme-font-weight: normal;
+
+  --omni-theme-border-radius: 4px;
+  --omni-theme-border-width: 2px;
+}
+
+:root[dark] {
+--global-font-color: #FFFFFF;
+--global-background-color: #24292e;
+--global-background-hover-color: #3E4348;
+
+--omni-theme-primary-color:  #b4b4b4;
+--omni-theme-primary-hover-color: #f7f7f71a ;
+--omni-theme-primary-active-color: #ffffff ;
+
+--omni-theme-accent-color: #808080;
+--omni-theme-accent-hover-color:  #bbbbbb1a;
+--omni-theme-accent-active-color:  #c3c3c3;
+
+--omni-theme-background-hover-color:  #2C3136;
+--omni-theme-background-active-color:  #33383D;
+
+--omni-theme-disabled-border-color:  #dedede44;
+--omni-theme-disabled-background-color: var(--docs-secondary-background-color);
+--omni-theme-error-font-color:  red;
+--omni-theme-error-border-color:  red;
+--omni-theme-hint-font-color:  lightgrey;
+--omni-theme-inactive-color:  #7c7c7c;
+--omni-theme-box-shadow-color:  #4b5258;
+
+--omni-theme-font-family: 'Hind Vadodara';
+--omni-theme-font-size: 14px;
+--omni-theme-font-weight: normal;
+
+--omni-theme-border-radius: 4px;
+--omni-theme-border-width: 2px;
+
+--omni-theme-box-shadow: 0 0 4px 4px var(--omni-box-shadow-color);
+
+/* COMPONENT SPECIFIC STYLES */
+--omni-switch-knob-box-shadow: 0 2px 4px 0 rgb(255, 255, 255), 0 1px 3px rgb(255, 255, 255), 0 -1px 2px rgb(255, 255, 255);
+--omni-select-item-header-font-color: var(--omni-theme-background-color);
+--omni-hyperlink-color-active: white;
+--omni-hyperlink-color-disabled: #34393E;
+--omni-hyperlink-color-visited: rgb(108 108 108);
+}
+
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+}

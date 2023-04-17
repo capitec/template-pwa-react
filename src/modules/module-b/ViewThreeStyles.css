@@ -1,0 +1,37 @@
+.preview {
+    min-height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.form-container {
+    min-height: 360px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-flow: column wrap
+}
+.form-container > EmailField,
+.form-container > PinField,
+.form-container > Check
+ {
+    width: 100%;
+ }
+ .form-container > * {
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ .terms {
+    margin-top: 15px;
+ }
+ .suffix-slot {
+   margin-right: 10px;
+   color: var(--omni-theme-primary-color);
+ }
+
+ /* Omni css variables test 
+ .form-container > * {
+    --omni-theme-primary-color: red;
+ }*/
