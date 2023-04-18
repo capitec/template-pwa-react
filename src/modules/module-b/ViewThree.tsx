@@ -8,7 +8,6 @@ import { OmniPinField, PinField } from '@capitec/omni-components-react/pin-field
 import { OmniRadio, OmniRadioGroup } from '@capitec/omni-components-react/radio';
 
 import '../../common/BaseStyles.css';
-import './ViewThreeStyles.css';
 
 let formValid: boolean = false;
 
@@ -62,36 +61,81 @@ function ViewThree() {
         '--omni-error-border-color': 'orangered'
     } as React.CSSProperties & Record<string, string>;
 
+    // Used to style the preview div
+    const previewStyles = {
+        minHeight: '360px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'row'
+    } as React.CSSProperties & Record<string, string>;
+
+    // Used to style the form container
+    const formContainerStyles = {
+        minHeight: '360px',
+        display: 'flex',
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+        flexDirection: 'column',
+        flexFlow: 'column'
+    } as React.CSSProperties & Record<string, string>;
+
+    //Used to style the nested components in the form container div
+    const componentStyles = {
+        width: '100%'
+    }
+
+    // Used to override Omni component CSS variables
+    const allFormContainerStyles = {
+        marginTop: '10px',
+        marginBottom: '10px'
+    } as React.CSSProperties & Record<string, string>;
+
+    const termsStyles = {
+        marginTop: '15px'
+    } as React.CSSProperties & Record<string, string>;
+
+    const suffixSlotStyle = {
+        marginRight: '10px'
+    } as React.CSSProperties & Record<string, string>;
+
+
     return (
-        <div className="preview">
-            <div className="form-container">
-                <OmniLabel label="Input Examples" type="title" />
+        <div style={previewStyles}>
+            <div style={formContainerStyles}>
+                <OmniLabel style={allFormContainerStyles} label="Input Examples" type="title" />
                 <OmniEmailField
-                    style={errorStyles}
+                    style={
+                        {...errorStyles, 
+                        ...allFormContainerStyles,
+                        ...componentStyles}}
                     id="form-email-field"
                     label="Email field"
                     hint="Enter a valid email address"
                     oninput={(e) => _emailFieldInput(e)}>
-                    <OmniIcon size="medium" slot="suffix" className="suffix-slot">
+                    <OmniIcon size="medium" slot="suffix" className="suffix-slot" style={suffixSlotStyle}>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%">
                             <path d="M22 3.25a.75.75 0 0 1 .75.75v16a.75.75 0 0 1-.75.75H2a.75.75 0 0 1-.75-.75V4A.75.75 0 0 1 2 3.25Zm-.75 3.19-8.82 6.174a.75.75 0 0 1-.76.06l-.1-.06-8.82-6.173V19.25h18.5V6.44Zm-.202-1.69H2.951L12 11.084l9.048-6.334Z" />
                         </svg>
                     </OmniIcon>
                 </OmniEmailField>
                 <OmniPinField
-                    style={errorStyles}
+                    style={
+                        {...errorStyles, 
+                        ...allFormContainerStyles,
+                        ...componentStyles}}
                     id="form-pin-field"
                     label="Pin field"
                     hint="Enter a pin consisting of numeric values"
                     oninput={(e) => _pinFieldInput(e)}
                 />
-                <OmniRadioGroup>
-                    <OmniRadio label="Developer" />
-                    <OmniRadio label="Admin" />
-                    <OmniRadio label="Casual User" checked />
+                <OmniRadioGroup style={allFormContainerStyles}>
+                    <OmniRadio style={allFormContainerStyles} label="Developer" />
+                    <OmniRadio style={allFormContainerStyles} label="Admin" />
+                    <OmniRadio style={allFormContainerStyles} label="Casual User" checked />
                 </OmniRadioGroup>
-                <OmniCheck id="form-check" label="I agree all fields above are populated" onclick={(e) => _checkClicked(e)} />
-                <OmniButton label="Submit" type="primary" onclick={() => _formSubmitted()} />
+                <OmniCheck style={{...termsStyles,...allFormContainerStyles}} id="form-check" label="I agree all fields above are populated" onclick={(e) => _checkClicked(e)} />
+                <OmniButton style={allFormContainerStyles} label="Submit" type="primary" onclick={() => _formSubmitted()} />
             </div>
         </div>
     );

@@ -47,7 +47,7 @@ The following NPM scripts within `package.json` should be noted:
 - `build` - Bundles code and copies artifacts for production from the `src` directory to the `build` directory.
 - `preview` - Launches a simple web server, serving the `build` directory (Remember to `build` first! 🎗️).
 - `test` - Launches the Playwright test runner & executes all tests within `tests` directory.
-- `format` - Runs the Prettier formatter on all `.ts` files, applying format updates where necessary.
+- `format` - Runs the Prettier formatter on all `.ts` and `.tsx` files, applying format updates where necessary.
 
 # Showcased Features
 |     Feature    |  Availability | Description |
@@ -55,11 +55,11 @@ The following NPM scripts within `package.json` should be noted:
 |    Components                 | ✅  | [Omni Components](https://github.com/capitec/omni-components)   |
 |    Routing                    | ❌  | Implemented React router                                        |
 |    Component Intellisense     | ✅  | Provided for all Omni components                                |
-|    VS Code Debugging          | ✅  | Note this will open up a second browser instance                |
-|    Tests                      | ✅  | Facilitated via Playwright                                      |
-|    Serve                      | ✅  |                                                                 |
-|    Build                      | ✅  |                                                                 |
-|    Build chunking             | ✅  |                                                                 |
-|    Preview built output       | ✅  |                                                                 |
-|    Formatting                 | ✅  |                                                                 |
-|    Linting                    | ❌  |                                                                 |
+|    VS Code Debugging          | ✅  | (Opens up a second browser instance)                            |
+|    Tests                      | ✅  | Provided via Playwright                                         |
+|    Serve                      | ✅  | Provided via react-scripts                                      |
+|    Build                      | ✅  | Provided via react-scripts                                      |
+|    Build chunking             | ✅  | Provided via react-scripts                                      |
+|    Preview built output       | ✅  | Provided via react-scripts                                      |
+|    Formatting                 | ✅  | Provided via prettier                                           |
+|    Linting                    | ❌  | To be provided                                                  |
