@@ -53,13 +53,13 @@ The following NPM scripts within `package.json` should be noted:
 |     Feature    |  Availability | Description |
 |-------------------------------|-----|-----------------------------------------------------------------|
 |    Components                 | ✅  | [Omni Components](https://github.com/capitec/omni-components)   |
-|    Routing                    | ✅  | Implemented React router                                        |
+|    Routing                    | ✅  | Implemented [React](https://react.dev) router                   |
 |    Component Intellisense     | ✅  | Provided for all Omni components                                |
 |    VS Code Debugging          | ✅  | (Opens up a second browser instance)                            |
-|    Tests                      | ✅  | Provided via Playwright                                         |
-|    Serve                      | ✅  | Provided via react-scripts                                      |
-|    Build                      | ✅  | Provided via react-scripts                                      |
-|    Build chunking             | ✅  | Provided via react-scripts                                      |
-|    Preview built output       | ✅  | Provided via react-scripts                                      |
-|    Formatting                 | ✅  | Provided via prettier                                           |
+|    Tests                      | ✅  | Provided via [Playwright](https://playwright.dev/)              |
+|    Serve                      | ✅  | Provided via `react-scripts`                                    |
+|    Build                      | ✅  | Provided via `react-scripts`                                    |
+|    Build chunking             | ✅  | Provided via `/* webpackChunkName: */` compiler hints           |
+|    Preview built output       | ✅  | Provided via `http-server`                                      |
+|    Formatting                 | ✅  | Provided via [Prettier](https://prettier.io/)                   |
 |    Linting                    | ❌  | To be provided                                                  |
