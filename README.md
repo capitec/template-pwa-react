@@ -53,7 +53,7 @@ The following NPM scripts within `package.json` should be noted:
 |     Feature    |  Availability | Description |
 |-------------------------------|-----|-----------------------------------------------------------------|
 |    Components                 | ✅  | [Omni Components](https://github.com/capitec/omni-components)   |
-|    Routing                    | ❌  | Implemented React router                                        |
+|    Routing                    | ✅  | Implemented React router                                        |
 |    Component Intellisense     | ✅  | Provided for all Omni components                                |
 |    VS Code Debugging          | ✅  | (Opens up a second browser instance)                            |
 |    Tests                      | ✅  | Provided via Playwright                                         |
