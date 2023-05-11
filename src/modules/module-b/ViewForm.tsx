@@ -11,7 +11,7 @@ import '../../common/BaseStyles.css';
 
 let formValid: boolean = false;
 
-function ViewThree() {
+function ViewForm() {
     // Check the contents of the components to confirm if they are in a valid state.
     function _formSubmitted() {
         console.log('Form submitted');
@@ -129,7 +129,7 @@ function ViewThree() {
                     hint="Enter a pin consisting of numeric values"
                     oninput={(e) => _pinFieldInput(e)}
                 />
-                <OmniRadioGroup style={allFormContainerStyles}>
+                <OmniRadioGroup style={allFormContainerStyles} horizontal>
                     <OmniRadio style={allFormContainerStyles} label="Developer" />
                     <OmniRadio style={allFormContainerStyles} label="Admin" />
                     <OmniRadio style={allFormContainerStyles} label="Casual User" checked />
@@ -141,4 +141,4 @@ function ViewThree() {
     );
 }
 
-export default ViewThree;
+export default ViewForm;

@@ -3,7 +3,7 @@ import { OmniColorField, ColorField } from '@capitec/omni-components-react/color
 import { OmniIcon } from '@capitec/omni-components-react/icon';
 import { OmniSelect, Select } from '@capitec/omni-components-react/select';
 import '../../common/BaseStyles.css';
-import './ViewTwoStyles.css';
+import './ViewComponentsStyles.css';
 import { useState } from 'react';
 
 const initialColor: string | undefined = '#209dee';
@@ -12,7 +12,7 @@ const iconSizes = ['default', 'extra-small', 'small', 'medium', 'large'] as cons
 type IconSizesTuple = typeof iconSizes;
 type IconSize = IconSizesTuple[number];
 
-function ViewTwo() {
+function ViewComponents() {
     const [color, setColor] = useState(initialColor);
     const [size, setSize] = useState('large' as IconSize);
 
@@ -47,4 +47,4 @@ function ViewTwo() {
     );
 }
 
-export default ViewTwo;
+export default ViewComponents;

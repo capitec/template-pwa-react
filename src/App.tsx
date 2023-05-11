@@ -6,25 +6,23 @@ import { lazy, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 
-const ViewOne = lazy(() => import(/* webpackChunkName: "module_a" */ './modules/module-a/ViewOne'));
-const ViewTwo = lazy(() => import(/* webpackChunkName: "module_a" */ './modules/module-a/ViewTwo'));
-const ViewThree = lazy(() => import(/* webpackChunkName: "module_b" */ './modules/module-b/ViewThree'));
+const ViewHome = lazy(() => import(/* webpackChunkName: "module_a" */ './modules/module-a/ViewHome'));
+const ViewComponents = lazy(() => import(/* webpackChunkName: "module_a" */ './modules/module-a/ViewComponents'));
+const ViewThree = lazy(() => import(/* webpackChunkName: "module_b" */ './modules/module-b/ViewForm'));
 
 function App() {
-    const _darkMediaQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : undefined;
-
-    const [darkMode, setDarkMode] = useState(_darkMediaQuery?.matches ?? false);
-
-    function _darkPreferenceChange(m: MediaQueryListEvent) {
+    const darkMediaQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : undefined;
+    const [darkMode, setDarkMode] = useState(darkMediaQuery?.matches ?? false);
+    
+    darkMediaQuery?.addEventListener('change', (m: MediaQueryListEvent) => {
         if (!darkMode && m.matches) {
-            _toggleDarkMode();
+            toggleDarkMode();
         } else if (darkMode && !m.matches) {
-            _toggleDarkMode();
+            toggleDarkMode();
         }
-    }
-    _darkMediaQuery?.addEventListener('change', _darkPreferenceChange);
+    });
 
-    function _toggleDarkMode() {
+    function toggleDarkMode() {
         setDarkMode(!darkMode);
         if (!darkMode) {
             document.documentElement.setAttribute('dark', '');
@@ -33,26 +31,30 @@ function App() {
         }
     }
 
+    if (darkMode) {
+        document.documentElement.setAttribute('dark', '');
+    }
+
     return (
         <div className="container">
             <header>
                 <img src="logo.png" alt="Omni Logo" />
-                <OmniLabel>Omni Starter React</OmniLabel>
+                <OmniLabel>Omni + React</OmniLabel>
             </header>
             <div className="navbar">
                 <nav>
-                    <OmniHyperlink href="/">One</OmniHyperlink>
-                    <OmniHyperlink href="/two" label="Two"></OmniHyperlink>
-                    <OmniHyperlink href="/three" label="Three"></OmniHyperlink>
+                    <OmniHyperlink href="/">Home</OmniHyperlink>
+                    <OmniHyperlink href="/components" label="Components"></OmniHyperlink>
+                    <OmniHyperlink href="/form" label="Form"></OmniHyperlink>
                 </nav>
-                <OmniSwitch label="Dark Mode" checked={darkMode} onvaluechange={() => _toggleDarkMode()}></OmniSwitch>
+                <OmniSwitch label="Dark Mode" checked={darkMode} onvaluechange={() => toggleDarkMode()}></OmniSwitch>
             </div>
             <div className="router">
                 <Router>
                     <Routes>
-                        <Route path="/" element={<ViewOne />} />
-                        <Route path="two" element={<ViewTwo />} />
-                        <Route path="three" element={<ViewThree />} />
+                        <Route path="" element={<ViewHome />} />
+                        <Route path="components" element={<ViewComponents />} />
+                        <Route path="form" element={<ViewThree />} />
                     </Routes>
                 </Router>
             </div>
