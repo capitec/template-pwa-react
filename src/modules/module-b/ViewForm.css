@@ -1,0 +1,32 @@
+.preview {
+    min-height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.form-container {
+    min-height: 360px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-flow: column wrap
+}
+
+.form-container>* {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-container>omni-email-field,
+.form-container>omni-pin-field,
+.form-container>omni-check {
+    width: 100%;
+}
+
+.suffix-slot {
+    margin-right: 10px;
+    color: var(--omni-theme-primary-color);
+}

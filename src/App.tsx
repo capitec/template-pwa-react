@@ -52,7 +52,7 @@ function App() {
             <div className="router">
                 <Router>
                     <Routes>
-                        <Route path="" element={<ViewHome />} />
+                        <Route path="" element={<ViewHome />}/>
                         <Route path="components" element={<ViewComponents />} />
                         <Route path="form" element={<ViewThree />} />
                     </Routes>
