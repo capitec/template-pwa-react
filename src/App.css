@@ -41,6 +41,9 @@ header > omni-label {
     header > omni-label {
         --omni-label-default-font-size: 24px;
     }
+    omni-switch > span {
+        display: none;
+    }
 }
 @media only screen and (max-height: 700px) {
     header {

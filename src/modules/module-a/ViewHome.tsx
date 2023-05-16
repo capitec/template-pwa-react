@@ -3,7 +3,7 @@ import { OmniLabel } from '@capitec/omni-components-react/label';
 import { OmniHyperlink } from '@capitec/omni-components-react/hyperlink';
 import '../../common/BaseStyles.css';
 
-function ViewHome() {
+export default function ViewHome() {
 
     document.title = 'Home';
 
@@ -42,5 +42,3 @@ function ViewHome() {
        </div>
     );
 }
-
-export default ViewHome;

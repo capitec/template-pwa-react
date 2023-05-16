@@ -50,6 +50,11 @@ html {
 
     --omni-theme-border-radius: 4px;
     --omni-theme-border-width: 2px;
+
+    /* COMPONENT SPECIFIC STYLES */
+	--omni-hyperlink-color: #00bfff;
+	--omni-hyperlink-color-active: #00bfff;
+    --omni-hyperlink-color-visited: #b872fa;
 }
 
 :root[dark] {
@@ -84,12 +89,7 @@ html {
     /* COMPONENT SPECIFIC STYLES */
     --omni-switch-knob-box-shadow: 0 2px 4px 0 rgb(255, 255, 255), 0 1px 3px rgb(255, 255, 255), 0 -1px 2px rgb(255, 255, 255);
     --omni-select-item-header-font-color: var(--omni-theme-background-color);
-    --omni-hyperlink-color-active: white;
-    --omni-hyperlink-color-disabled: #34393E;
-    --omni-hyperlink-color-visited: rgb(108 108 108);
 }
-
-
 
 body {
     width: 100vw;

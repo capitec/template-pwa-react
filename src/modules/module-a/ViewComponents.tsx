@@ -14,12 +14,12 @@ const iconSizes = ['default', 'extra-small', 'small', 'medium', 'large'] as cons
 type IconSizesTuple = typeof iconSizes;
 type IconSize = IconSizesTuple[number];
 
-function ViewComponents() {
+export default function ViewComponents() {
     const [color, setColor] = useState(initialColor);
     const [size, setSize] = useState('large' as IconSize);
 
     function _colorChange(event: Event) {
-        setColor((event.target as ColorField).value?.toString());
+        setColor((event.target as ColorField).value?.toString() as string);
     }
 
     function _sizeChange(event: Event) {
@@ -65,5 +65,3 @@ function ViewComponents() {
         </div>
     );
 }
-
-export default ViewComponents;

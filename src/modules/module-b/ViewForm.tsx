@@ -9,7 +9,7 @@ import { OmniRadio, OmniRadioGroup } from '@capitec/omni-components-react/radio'
 import '../../common/BaseStyles.css';
 import './ViewForm.css';
 
-function ViewForm() {
+export default function ViewForm() {
     // Check the contents of the components to confirm if they are in a valid state.
     function _formSubmitted() {
         console.log('Form submitted');
@@ -52,8 +52,8 @@ function ViewForm() {
 
     // Used to override Omni component CSS variables
     const errorStyles = {
-        '--omni-error-font-color': 'orangered',
-        '--omni-error-border-color': 'orangered'
+        '--omni-error-font-color': 'purple',
+        '--omni-error-border-color': 'purple'
     } as React.CSSProperties & Record<string, string>;
 
     const suffixSlotStyle = {
@@ -112,5 +112,3 @@ function ViewForm() {
         </div>
     );
 }
-
-export default ViewForm;
