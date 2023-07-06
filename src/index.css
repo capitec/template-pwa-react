@@ -17,78 +17,87 @@ html {
 
 :root {
 
-    --global-font-family: 'Hind Vadodara', sans-serif;
-    --global-font-color: #000000;
-    --global-background-color: #FFFFFF;
-    --global-background-hover-color: #E6E6E6;
+	--global-font-family: 'Hind Vadodara', sans-serif;
+	--global-font-color: #000000;
 
-    font-family: var(--global-font-family);
-        
-    --omni-theme-font-family: var(--global-font-family);
-    --omni-theme-primary-color:  #808080;
-    --omni-theme-primary-hover-color: #7878781a ; /* 3% darker */
-    --omni-theme-primary-active-color: #787878 ; /* 6% darker */
+	--global-background-color: #FFFFFF;
+	--global-background-hover-color: #E6E6E6;
+
+	--omni-theme-primary-color: #808080;
+    --omni-theme-primary-hover-color: #616161; /* 12% darker */
+    --omni-theme-primary-active-color: #434343; /* 24% darker */
 
     --omni-theme-accent-color: #c3c3c3;
-    --omni-theme-accent-hover-color:  #bbbbbb1a; /* 3% darker */
-    --omni-theme-accent-active-color:  #b4b4b4; /* 6% darker */
+    --omni-theme-accent-hover-color: #a4a4a4; /* 12% darker */
+    --omni-theme-accent-active-color: #868686; /* 24% darker */
 
-    --omni-theme-background-color:  var(--global-background-color);
-    --omni-theme-background-hover-color:  #f7f7f71a; /* 3% darker */
-    --omni-theme-background-active-color:  #f0f0f0; /* 6% darker */
+	--omni-theme-background-color: var(--global-background-color);
+    --omni-theme-background-hover-color: #f7f7f7; /* 3% darker */
+    --omni-theme-background-active-color: #f0f0f0; /* 6% darker */
 
-    --omni-theme-font-color:  var(--global-font-color);
-    --omni-theme-disabled-border-color:  #dedede44;
-    --omni-theme-disabled-background-color:  #dedede;
-    --omni-theme-error-font-color:  red;
-    --omni-theme-error-border-color:  red;
-    --omni-theme-hint-font-color:  lightgrey;
-    --omni-theme-inactive-color:  #7c7c7c;
-    --omni-theme-box-shadow-color:  #f2f2f2;
-    --omni-theme-font-size: 14px;
-    --omni-theme-font-weight: normal;
+	--omni-theme-font-color: var(--global-font-color);
+    font-family: var(--global-font-family);
+	--omni-theme-font-family: var(--global-font-family);
 
-    --omni-theme-border-radius: 4px;
-    --omni-theme-border-width: 2px;
+	--omni-theme-disabled-border-color: #dedede44;
+	--omni-theme-disabled-background-color: #dedede;
+	--omni-theme-error-font-color: red;
+	--omni-theme-error-border-color: red;
+	--omni-theme-hint-font-color: lightgrey;
+	--omni-theme-inactive-color: #7c7c7c;
+	--omni-theme-box-shadow-color: #f2f2f2;
+	--omni-theme-font-size: 14px;
+	--omni-theme-font-weight: normal;
 
-    /* COMPONENT SPECIFIC STYLES */
+	--omni-theme-border-radius: 4px;
+	--omni-theme-border-width: 2px;
+    
+	/* COMPONENT SPECIFIC STYLES */
 	--omni-hyperlink-color: #00bfff;
 	--omni-hyperlink-color-active: #00bfff;
     --omni-hyperlink-color-visited: #b872fa;
 }
 
 :root[dark] {
-    --global-font-color: #FFFFFF;
-    --global-background-color: #24292e;
-    --global-background-hover-color: #3E4348;
 
-    --omni-theme-primary-color:  #b4b4b4;
-    --omni-theme-primary-hover-color: #f7f7f71a ;
-    --omni-theme-primary-active-color: #ffffff ;
+	--global-font-color: #FFFFFF;
+    
+	--global-background-color: #24292e;
+	--global-background-hover-color: #3E4348;
+
+    --omni-theme-primary-color: #b4b4b4;
+    --omni-theme-primary-hover-color: #d3d3d3; /* 12% lighter */
+    --omni-theme-primary-active-color: #f1f1f1; /* 24% lighter */
 
     --omni-theme-accent-color: #808080;
-    --omni-theme-accent-hover-color:  #bbbbbb1a;
-    --omni-theme-accent-active-color:  #c3c3c3;
+    --omni-theme-accent-hover-color: #bbbbbb1a;
+    --omni-theme-accent-active-color: #c3c3c3;
 
-    --omni-theme-background-hover-color:  #2C3136;
-    --omni-theme-background-active-color:  #33383D;
+    --omni-theme-background-color: #24292e;
+    --omni-theme-background-hover-color: #2c3136;
+    --omni-theme-background-active-color: #33383d;
 
-    --omni-theme-disabled-border-color:  #dedede44;
+    --omni-theme-font-color: var(--global-font-color);
+
+	--omni-theme-disabled-border-color: #dedede44;
     --omni-theme-disabled-background-color: var(--docs-secondary-background-color);
-    --omni-theme-error-font-color:  red;
-    --omni-theme-error-border-color:  red;
-    --omni-theme-hint-font-color:  lightgrey;
-    --omni-theme-inactive-color:  #7c7c7c;
-    --omni-theme-box-shadow-color:  #4b5258;
+	--omni-theme-error-font-color: red;
+	--omni-theme-error-border-color: red;
+	--omni-theme-hint-font-color: lightgrey;
+	--omni-theme-inactive-color: #7c7c7c;
+	--omni-theme-box-shadow-color: #4b5258;
 
-    --omni-theme-border-radius: 4px;
-    --omni-theme-border-width: 2px;
+	--omni-theme-border-radius: 4px;
+	--omni-theme-border-width: 2px;
 
-    --omni-theme-box-shadow: 0 0 4px 4px var(--omni-box-shadow-color);
+	--omni-theme-box-shadow: 0 0 4px 4px var(--omni-box-shadow-color);
 
-    /* COMPONENT SPECIFIC STYLES */
-    --omni-switch-knob-box-shadow: 0 2px 4px 0 rgb(255, 255, 255), 0 1px 3px rgb(255, 255, 255), 0 -1px 2px rgb(255, 255, 255);
-    --omni-select-item-header-font-color: var(--omni-theme-background-color);
+	/* COMPONENT SPECIFIC STYLES */
+	--omni-switch-knob-box-shadow: 0 2px 4px 0 rgb(255, 255, 255), 0 1px 3px rgb(255, 255, 255), 0 -1px 2px rgb(255, 255, 255);
+	--omni-select-item-header-font-color: var(--omni-theme-background-color);
+    --omni-button-white-color: var(--global-background-color);
+    --omni-button-white-hover-background: #F0F0F0;
+    --omni-button-white-active-background: #E0E0E0;
 }
 
 body {
